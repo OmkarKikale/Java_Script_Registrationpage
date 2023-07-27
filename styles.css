@@ -1,0 +1,32 @@
+form {
+	margin: 0 auto;
+	padding: 20px;
+	border: 2px solid rgb(20, 20, 20);
+	border-radius: 50px;
+	background-color: rgb(213, 231, 255);
+	max-width: 500px;
+    
+}
+
+table{margin: 0 auto;
+	padding: 20px;
+	border: 2px solid rgb(20, 20, 20);
+	border-radius: 10px;
+	background-color: rgb(235, 233, 137);
+	max-width: 500px;
+	}
+
+	.btm{
+		
+		background-color: greenyellow;
+		width: 80%;
+		font-family: 'Times New Roman', Times, serif;
+		font-weight: bolder;
+	}
+	
+
+
+/* background-image: url(http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%; */

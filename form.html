@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    
+    <div align ="center">
+
+    
+    <form>
+
+        <h1>Registration from</h1>
+
+        frist name: <input type="text" class="Username" id="f1"><br>
+        <br>
+    
+        last name : <input type="text" class="Username" id="l1"><br>
+        <br>
+       
+        mobile no :<input type="tel" id="mob">
+        <br>
+        <br>
+        mail : <input type="mail" id="mail" style="width: 200px;">
+        <br>
+        <br>
+        Enter your birthday : <input type="date" id="date">
+        <br>
+        <br>
+        <input type="radio" name="gender" value="male" >male
+        <input type="radio" name="gender" value="female">female
+        <input type="radio" name="gender" value="other">other
+        <br>
+        <br>
+         
+        <input type="button" value="submit" onclick="get()" class="btm">
+    </form>
+
+</div>
+<div align="center">
+<table border="2px">
+    <tr>
+        <td> frist Name </td>
+        <td id="f2"></td>
+        
+    </tr>
+    <tr> 
+        <td> Last name </td>
+        <td id="l2"></td>     
+     </tr>
+     <tr>
+        <td> Mobile no </td>
+        <td id="mob2"></td>
+    </tr>
+    <tr>
+        <td> BirthDate </td>
+        <td id="date1"></td> 
+    </tr>
+    <tr>
+        <td> mail </td>
+        <td id="mail1"></td>
+    </tr>
+    <tr>
+        <td >gender </td>
+        <td id="p5"></td>
+    </tr>
+    
+    
+</table>
+</div>
+
+<script>
+    function get()
+
+{
+   
+    var b1=document.getElementById("f1").value;
+    document.getElementById("f2").innerHTML=b1;
+    var b2=document.getElementById("l1").value;
+    document.getElementById("l2").innerHTML=b2;
+    var b3=document.getElementById("mob").value;
+    document.getElementById("mob2").innerHTML=b3;
+    var b4=document.getElementById("mail").value;
+    document.getElementById("mail1").innerHTML=b4;
+    var b5=document.getElementById("date").value;
+    document.getElementById("date1").innerHTML=b5;
+
+
+    var a3=document.getElementsByName("gender")
+
+        for(i=0;i<a3.length;i++){
+            if(a3[i].checked){
+               var gen=a3[i].value
+
+            }
+
+            }
+
+            document.getElementById("p5").innerHTML=gen;
+        
+
+
+
+}
+</script>
+<script type="text/javascript" src="form.js"></script>
+
+</body>
+</html>
